@@ -14,7 +14,7 @@ const MenusPage = () => {
         </Button>
       </Box>
       {menus.map((item) => (
-        <Typography>{item.name}</Typography>
+        <Typography key={item.id}>{item.name}</Typography>
       ))}
       <NewMenu open={open} setOpen={setOpen} />
     </Box>

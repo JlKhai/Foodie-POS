@@ -15,7 +15,7 @@ const AddonsCategoriesPage = () => {
         </Button>
       </Box>
       {addonsCategories.map((item) => (
-        <Typography>{item.name}</Typography>
+        <Typography key={item.id}>{item.name}</Typography>
       ))}
       <NewAddonCategory open={open} setOpen={setOpen} />
     </Box>

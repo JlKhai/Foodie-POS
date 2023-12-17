@@ -14,7 +14,7 @@ const TablesPage = () => {
         </Button>
       </Box>
       {tables.map((item) => (
-        <Typography> {item.name}</Typography>
+        <Typography key={item.id}> {item.name}</Typography>
       ))}
       <NewTable open={open} setOpen={setOpen} />
     </Box>

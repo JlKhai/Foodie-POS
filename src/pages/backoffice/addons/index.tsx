@@ -14,7 +14,7 @@ const AddonsPage = () => {
         </Button>
       </Box>
       {addons.map((item) => (
-        <Typography> {item.name}</Typography>
+        <Typography key={item.id}> {item.name}</Typography>
       ))}
       <NewAddon open={open} setOpen={setOpen} />
     </Box>

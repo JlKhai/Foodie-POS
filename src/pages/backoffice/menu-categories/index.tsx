@@ -15,7 +15,7 @@ const MenuCategoriesPage = () => {
       </Box>
 
       {menuCategories.map((item) => (
-        <Typography>{item.name}</Typography>
+        <Typography key={item.id}>{item.name}</Typography>
       ))}
       <NewMenuCategory open={open} setOpen={setOpen} />
     </Box>
